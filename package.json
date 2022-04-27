@@ -1,0 +1,67 @@
+{
+  "name": "gatsby-starter-default",
+  "private": true,
+  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "version": "0.1.0",
+  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "dependencies": {
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.11.2",
+    "@mui/icons-material": "^5.5.1",
+    "@mui/material": "^5.5.1",
+    "@mui/styles": "^5.5.1",
+    "bootstrap": "^5.1.3",
+    "font-awesome": "^4.7.0",
+    "gatsby": "^4.10.0",
+    "gatsby-image": "^3.11.0",
+    "gatsby-plugin-gatsby-cloud": "^4.10.0",
+    "gatsby-plugin-image": "^2.11.1",
+    "gatsby-plugin-manifest": "^4.10.0",
+    "gatsby-plugin-netlify": "^4.1.0",
+    "gatsby-plugin-offline": "^5.10.0",
+    "gatsby-plugin-react-helmet": "^5.10.0",
+    "gatsby-plugin-sharp": "^4.11.1",
+    "gatsby-source-cloudinary": "^0.1.14",
+    "gatsby-source-filesystem": "^4.11.1",
+    "gatsby-source-strapi": "^2.0.0",
+    "gatsby-transformer-remark": "^5.11.1",
+    "gatsby-transformer-sharp": "^4.11.0",
+    "prop-types": "^15.8.1",
+    "react": "^17.0.1",
+    "react-bootstrap": "^2.2.1",
+    "react-card-carousel": "^1.1.3",
+    "react-carousel-slider": "^2.0.13",
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
+    "react-material-ui-carousel": "^3.2.0",
+    "react-multi-carousel": "^2.8.0",
+    "react-router-dom": "^6.2.2",
+    "react-slick": "^0.28.1",
+    "slick-carousel": "^1.8.1",
+    "strapi-plugin-graphql": "^3.6.8",
+    "styled-components": "^5.3.3"
+  },
+  "devDependencies": {
+    "prettier": "^2.5.1"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "0BSD",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "gatsby develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  }
+}
