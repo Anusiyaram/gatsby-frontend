@@ -26,6 +26,8 @@
     "gatsby-source-strapi": "^2.0.0",
     "gatsby-transformer-remark": "^5.11.1",
     "gatsby-transformer-sharp": "^4.11.0",
+    "netlify-cli": "^10.1.0",
+    "npm": "^8.5.5",
     "prop-types": "^15.8.1",
     "react": "^17.0.1",
     "react-bootstrap": "^2.2.1",
