@@ -40,9 +40,7 @@ export default function Slide() {
           },
         ],
       }
-    
-      const [settings, setSettings] = useState(config)
-      
+      const [settings, setSettings] = useState(config)      
       return (
     <StaticQuery
       query={graphql`
