@@ -23,9 +23,7 @@ module.exports = {
     {
       resolve: "gatsby-source-strapi",
       options: {
-        apiURL: process.env.DEPLOY_URL
-          ? "https://strapi-gatsby-postgresql-pro.herokuapp.com/api"
-          : "http://localhost:1337",
+        apiURL: "https://strapi-gatsby-postgresql-pro.herokuapp.com/api",
         collectionTypes: ["article", "category"],
         queryLimit: 1000,
       },
