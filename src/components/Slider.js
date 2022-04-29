@@ -66,7 +66,7 @@ export default function Slide() {
         <Slider {...settings}>
         {data.allStrapiArticle.edges.map(document => (
               <div className="img-card" key={document.node.id}>
-                <Img className="img" fixed={document.node.Image} alt="" />
+                <Img className="img" fixed={document.node.Image.localFile} alt="" />
                 <div class="card-body">
                   <div className="card-title">{document.node.Title}</div>
                   <div className="card-text">{document.node.Content}</div>
