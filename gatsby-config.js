@@ -21,6 +21,15 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-transformer-cloudinary',
+      options: {
+        cloudName: `dzrqpbrpv`,
+        apiKey: `316115841284142`,
+        apiSecret: `btuLMK4xsgi3OUNdlwRJXRlDJPQ`,
+        uploadFolder: 'gatsby-cloudinary',
+      },
+    },
+    {
       resolve: `gatsby-source-strapi`,
       options: {
         apiURL: process.env.DEPLOY_URL
@@ -54,7 +63,7 @@ module.exports = {
       apiSecret: `btuLMK4xsgi3OUNdlwRJXRlDJPQ`,
       resourceType: `image`,
       type: ``,
-      prefix: `gatsby-source-cloudinary/`
+      prefix: ``
       }
   },
     // this (optional) plugin enables Progressive Web App + Offline functionality

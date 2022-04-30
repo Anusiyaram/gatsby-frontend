@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import Img from "gatsby-image"
 import Slider from "react-slick"
+import Imgurl from "../components/Imgurl"
 import './Bootstrap.min.css';
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
@@ -44,29 +45,40 @@ export default function Slide() {
       return (
     <StaticQuery
       query={graphql`
-        query headingQueryAndHeadingQuery {
-            allStrapiArticle {
-                edges {
-                  node {
-                    id
-                    Image {
-                      id
-                      localFile {
-                        url
-                    }
-                    }
-                    Title
-                    Content
+      query headingQueryAndHeadingQuery {
+        allStrapiArticle {
+          edges {
+            node {
+              id
+              Image {
+                id
+                url
+                formats {
+                  medium {
+                    url
+                  }
+                  large {
+                    url
+                  }
+                  thumbnail {
+                    url
                   }
                 }
               }
+              Title
+              Content
+            }
+          }
         }
+      }
       `}
       render={data => (
         <Slider {...settings}>
         {data.allStrapiArticle.edges.map(document => (
               <div className="img-card" key={document.node.id}>
-                <Img className="img" fixed={document.node.Image.localFile} alt="" />
+                {document.node.Image.map(articleImg => (
+                  <img alt={articleImg.id} src={articleImg.formats.thumbnail.url} width="351" height="200"/>
+                ))}
                 <div class="card-body">
                   <div className="card-title">{document.node.Title}</div>
                   <div className="card-text">{document.node.Content}</div>
