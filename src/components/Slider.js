@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-//import Img from "gatsby-image"
+import Img from "gatsby-image"
 import Slider from "react-slick"
 //import Imgurl from "../components/Imgurl"
 import './Bootstrap.min.css';
@@ -74,14 +74,14 @@ export default function Slide() {
       `}
       render={data => (
         <Slider {...settings}>
-          {data.allStrapiArticle.edges.map(document => (
-            <div className="img-card" key={document.node.id}>
-              {document.node.Image.map(articleImg => (
-                <img alt={articleImg.id} src={articleImg.formats.thumbnail.url} width="351" height="200" />
-              ))}
+          {data.allStrapiArticle.edges.map(articleData => (
+            <div className="img-card" key={articleData.node.id}>
+              
+                <img alt={articleData.node.Image.id} src={articleData.node.Image.url} width="351" height="200" />
+             
               <div class="card-body">
-                <div className="card-title">{document.node.Title}</div>
-                <div className="card-text">{document.node.Content}</div>
+                <div className="card-title">{articleData.node.Title}</div>
+                <div className="card-text">{articleData.node.Content}</div>
               </div>
             </div>
           ))}
