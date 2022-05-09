@@ -37,7 +37,7 @@ export default class Div extends React.Component {
           <div className="header-container">
             <div className="logo">
               <a href="index.html" className="animate">
-                <img src="https://res.cloudinary.com/dzrqpbrpv/image/upload/c_scale,w_70/v1651498808/logo_o4szs2.jpg" alt="#" />
+                <img src="https://res.cloudinary.com/dzrqpbrpv/image/upload/v1652081939/WhatsApp_Image_2022-05-05_at_7.30.39_PM_fumzgk-media_lib_thumb_euferf.jpg" alt="#" />
                 {/* <span style={{ color: "#0969C3" }}>EDU</span>com */}
               </a>
             </div>
